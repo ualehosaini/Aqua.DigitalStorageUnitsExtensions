@@ -14,5 +14,15 @@
             return input / KiloByte;
         }
 
+        /// <summary>
+        /// Converts KiloByte to Byte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal KiloByteToByte(this decimal input)
+        {
+            return input * KiloByte;
+        }
+
     }
 }
