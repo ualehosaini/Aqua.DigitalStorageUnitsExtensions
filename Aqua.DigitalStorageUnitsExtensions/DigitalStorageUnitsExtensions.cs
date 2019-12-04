@@ -35,5 +35,15 @@
             return input / Megabyte;
         }
 
+        /// <summary>
+        /// Converts MegaByte to Byte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal MegaByteToByte(this decimal input)
+        {
+            return input * Megabyte;
+        }
+
     }
 }
