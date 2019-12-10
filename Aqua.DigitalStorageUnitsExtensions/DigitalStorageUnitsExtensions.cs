@@ -55,5 +55,15 @@
         {
             return input / GigaByte;
         }
+
+        /// <summary>
+        /// Converts GigaByte to Byte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal GigaByteToByte(this decimal input)
+        {
+            return input * GigaByte;
+        }
     }
 }
