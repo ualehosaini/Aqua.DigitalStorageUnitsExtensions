@@ -4,6 +4,7 @@
     {
         private const decimal KiloByte = 1024;
         private const decimal Megabyte = 1048576;
+        private const decimal GigaByte = 1073741824;
 
         /// <summary>
         /// Converts Byte to KiloByte
@@ -45,5 +46,14 @@
             return input * Megabyte;
         }
 
+        /// <summary>
+        /// Converts Byte to GigaByte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal ByteToGigaByte(this decimal input)
+        {
+            return input / GigaByte;
+        }
     }
 }
