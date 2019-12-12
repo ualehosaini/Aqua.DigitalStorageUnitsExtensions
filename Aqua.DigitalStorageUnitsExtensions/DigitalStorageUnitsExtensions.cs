@@ -76,5 +76,15 @@
         {
             return input / TeraByte;
         }
+
+        /// <summary>
+        /// Converts TeraByte to Byte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal TeraByteToByte(this decimal input)
+        {
+            return input * TeraByte;
+        }
     }
 }
