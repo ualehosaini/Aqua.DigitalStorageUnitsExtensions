@@ -96,5 +96,15 @@
         {
             return input / KiloByte;
         }
+
+        /// <summary>
+        /// Converts MegaByte to KiloByte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal MegaByteToKiloByte(this decimal input)
+        {
+            return input * KiloByte;
+        }
     }
 }
