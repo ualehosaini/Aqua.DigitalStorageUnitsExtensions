@@ -106,5 +106,15 @@
         {
             return input * KiloByte;
         }
+
+        /// <summary>
+        /// Converts KiloByte to GigaByte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal KiloByteToGigaByte(this decimal input)
+        {
+            return input / Megabyte;
+        }
     }
 }
