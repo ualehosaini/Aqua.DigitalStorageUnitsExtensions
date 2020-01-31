@@ -136,5 +136,16 @@
         {
             return input / GigaByte;
         }
+
+        /// <summary>
+        /// Converts TeraByte to KiloByte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal TeraByteToKiloByte(this decimal input)
+        {
+            return input * GigaByte;
+        }
+
     }
 }
