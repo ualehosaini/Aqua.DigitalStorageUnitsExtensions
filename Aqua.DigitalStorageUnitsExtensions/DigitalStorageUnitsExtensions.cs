@@ -157,5 +157,15 @@
             return input / KiloByte;
         }
 
+        /// <summary>
+        /// Converts GigaByte to MegaByte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal GigaByteToMegaByte(this decimal input)
+        {
+            return input * KiloByte;
+        }
+
     }
 }
