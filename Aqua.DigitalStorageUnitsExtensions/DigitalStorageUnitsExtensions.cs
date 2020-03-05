@@ -177,6 +177,15 @@
             return input / Megabyte;
         }
 
+        /// <summary>
+        /// Converts TeraByte to MegaByte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal TeraByteToMegaByte(this decimal input)
+        {
+            return input * Megabyte;
+        }
 
     }
 }
