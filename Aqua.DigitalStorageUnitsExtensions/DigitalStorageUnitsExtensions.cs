@@ -167,5 +167,16 @@
             return input * KiloByte;
         }
 
+        /// <summary>
+        /// Converts MegaByte to GigaByte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal MegaByteToTeraByte(this decimal input)
+        {
+            return input / Megabyte;
+        }
+
+
     }
 }
