@@ -197,5 +197,14 @@
             return input / KiloByte;
         }
 
+        /// <summary>
+        /// Converts TeraByte to GigaByte
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static decimal TeraByteToGigaByte(this decimal input)
+        {
+            return input * KiloByte;
+        }
     }
 }
