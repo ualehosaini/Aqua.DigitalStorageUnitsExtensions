@@ -30,5 +30,15 @@ namespace Aqua.DigitalStorageUnitsExtensions.Tests
         {
             Assert.Equal(expected, input.ByteToMegaByte());
         }
+
+        [Theory]
+        [InlineData(1048576, 1)]
+        [InlineData(10485760, 10)]
+        [InlineData(524288, 0.5)]
+        public void MegaByteToByte_Valid(decimal expected, decimal input)
+        {
+            Assert.Equal(expected, input.MegaByteToByte());
+        }
+
     }
 }
