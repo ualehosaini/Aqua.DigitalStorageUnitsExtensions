@@ -67,6 +67,15 @@ namespace Aqua.DigitalStorageUnitsExtensions.Tests
             Assert.Equal(expected, input.ByteToTeraByte());
         }
 
+        [Theory]
+        [InlineData(1099511627776, 1)]
+        [InlineData(10995116277760, 10)]
+        [InlineData(549755813888, 0.5)]
+        public void TeraByteToByte_Valid(decimal expected, decimal input)
+        {
+            Assert.Equal(expected, input.TeraByteToByte());
+        }
+
 
     }
 }
