@@ -103,5 +103,15 @@ namespace Aqua.DigitalStorageUnitsExtensions.Tests
         {
             Assert.Equal(expected, input.KiloByteToGigaByte());
         }
+
+        [Theory]
+        [InlineData(1048576, 1)]
+        [InlineData(10485760, 10)]
+        [InlineData(524288, 0.5)]
+        public void GigaByteToKiloByte_Valid(decimal expected, decimal input)
+        {
+            Assert.Equal(expected, input.GigaByteToKiloByte());
+        }
+
     }
 }
