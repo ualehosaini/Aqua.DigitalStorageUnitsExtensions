@@ -76,6 +76,14 @@ namespace Aqua.DigitalStorageUnitsExtensions.Tests
             Assert.Equal(expected, input.TeraByteToByte());
         }
 
+        [Theory]
+        [InlineData(1, 1024)]
+        [InlineData(10, 10240)]
+        [InlineData(0.5, 512)]
+        public void KiloByteToMegaByte_Valid(decimal expected, decimal input)
+        {
+            Assert.Equal(expected, input.KiloByteToMegaByte());
+        }
 
     }
 }
